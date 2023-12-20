@@ -22,7 +22,11 @@
   </main>
   <nav class="container navigation-bar">
     <a class="link-text logo-navlink" href="index.html">Warsha<span class="text-link-text-1">.</span></a>
-    <div class="container container-3"><a class="link-text navlink-menu" href="index.html#features" title="Features">Features</a><a class="link-text navlink-menu" href="index.html#services" title="Services">Services</a><a class="link-text navlink-menu" href="index.html#contact" title="Contact">About Us</a></div>
+    <div class="container container-3" style="display: flex; justify-content: center;"><a class="link-text navlink-menu" href="index.html#features" title="Features">Features</a><a class="link-text navlink-menu" href="index.html#services" title="Services">Services</a><a class="link-text navlink-menu" href="index.html#contact" title="Contact">About Us</a></div>
+    <div style="float: right;">
+      <a class="log" href="#" style="display: inline-block; padding: 10px 15px; margin: 10px; border: 1px solid white; color: white; text-decoration: none;">Login</a>
+      <a class ="log" href="#" style="display: inline-block; padding: 10px 15px; margin: 10px; border: 1px solid white; color: white; text-decoration: none;">Sign up</a>
+    </div>
   </nav>
   <div class="container container-hero-brands">
     <div class="container container-brand">
@@ -340,83 +344,64 @@
       <!-- Booking Start -->
       <div class="container container-plan2">
         <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-6 py-5">
-                    <div class="py-5">
-                        <h1 class="plan-name2">Book our Car Repair Service</h1>
-                        <p class="plan-name2">Descriptions.</p>
+          <div class="row gx-5">
+            <div class="col-lg-6 py-5">
+              <div class="py-5">
+                <h1 class="plan-name2">Book our Car Repair Service</h1>
+                <p class="plan-name2">Descriptions.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
+                <h1 class="plan-name2">Book For A Service</h1>
+      
+                <form>
+                  <div class="row g-3">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <input type="text" class="form-control border-0 modern-input" placeholder="Your Name" style="margin-bottom: 20px; animation: fadeInUp 0.5s ease;">
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="col-12">
+                          <input type="email" class="form-control border-0 modern-input" placeholder="Your Email" style="margin-bottom: 20px; animation: fadeInUp 0.5s ease;">
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="col-12">
+                          <select class="container neutral-inner-form-wrapper-1 modern-select" style="animation: fadeInUp 0.5s ease;">
+                            <option selected disabled hidden>Select A Service</option>
+                            <option value="1">Service 1</option>
+                            <option value="2">Service 2</option>
+                            <option value="3">Service 3</option>
+                          </select>
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                      </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <h1 class="plan-name2">Book For A Service</h1>
-
-                        <form class="form-container form-three-columns">
-                         <div class="container neutral-inner-form-wrapper-1">
-
-                        </form>
-
-                        <form>
-                            <div class="row g-3">
-                              <div class="container">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="rule rule-plan" style="margin-bottom: 20px; animation: fadeInUp 0.5s ease;">
-                                            <input type="text" class="form-control border-0 modern-input" placeholder="Your Name">
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="rule rule-plan" style="margin-bottom: 20px; animation: fadeInUp 0.5s ease;">
-                                            <input type="email" class="form-control border-0 modern-input" placeholder="Your Email">
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="container neutral-inner-form-wrapper-1" style="animation: fadeInUp 0.5s ease;">
-                                            <select class="container neutral-inner-form-wrapper-1 modern-select">
-                                                <option selected disabled hidden>Select A Service</option>
-                                                <option value="1">Service 1</option>
-                                                <option value="2">Service 2</option>
-                                                <option value="3">Service 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="row">
-                                </div>
-                            </div>
-                            
-                            <style>
-                             
-                            </style>
-                            
-                                <div class="rule rule-plan">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 datetimepicker-input modern-select"
-                                            placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0 modern-select" placeholder="Special Request"></textarea>
-                                </div>
-                                <div class="col-12">
-                                </div>
-                                <button type="submit" class="button-form">Book&nbsp;Now</button>
-                                </div>
-                            </div>
-                        </form>
+      
+                    <div class="col-12">
+                      <input type="text" class="form-control border-0 datetimepicker-input modern-select" placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px; margin-bottom: 20px; animation: fadeInUp 0.5s ease;">
                     </div>
-                </div>
+                    <div class="col-12">
+                      <textarea class="form-control border-0 modern-select" placeholder="Special Request" style="margin-bottom: 20px; animation: fadeInUp 0.5s ease;"></textarea>
+                    </div>
+                    <div class="col-12">
+                    </div>
+                    <button type="submit" class="button-form" style="animation: fadeInUp 0.5s ease;">Book Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-  </div>
+      </div>
+      
     <!-- Booking End -->
   <main class="container contact-section" id="contact">
     <div class="container contact-container-wrapper">

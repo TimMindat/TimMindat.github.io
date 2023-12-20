@@ -168,6 +168,7 @@ span.text-element.text-tagline {
 a.link-text.logo-navlink {
   padding: 4px 24px;
   color: #fff;
+  text-align: center;
   text-decoration: none;
   text-transform: none;
   letter-spacing: 0;
@@ -240,6 +241,7 @@ a.link-text.play-tutorial-college {
 a.link-text.navlink-menu {
   display: inline;
   padding: 4px 16px 16px 8px;
+  text-align: left;
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
@@ -322,6 +324,70 @@ a.link-button.tabslink {
   font-family: 'Barlow', sans-serif;
 }
 
+/* The button style */
+a.log {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  /* The transition property */
+  transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+/* The hover effect */
+a.log:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
+  /* The scale effect */
+  transform: scale(1.1);
+}
+
+/* The button style */
+a {
+  position: relative;
+  overflow: hidden;
+}
+
+/* The pseudo-element style */
+a.log::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  /* The animation property */
+  animation: ripple 0.4s ease-out;
+}
+
+/* The keyframes for the ripple effect */
+@keyframes ripple {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(15);
+  }
+}
+
+/* The animation will only play when the button has the .animate class */
+a.log::after {
+  animation-play-state: paused;
+}
+
+a.animate::after {
+  animation-play-state: running;
+}
+
 a.link-button.button {
   -ms-flex-order: 0;
   margin-top: auto;
@@ -381,6 +447,7 @@ form.form-container.form-three-columns {
   justify-items: auto;
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
+  text-align: center;
           align-content: flex-start;
 }
 
@@ -1421,6 +1488,8 @@ a.social-image.footer-social-icon:hover {
 
   a.link-text.navlink-menu {
     display: inline;
+    text-align: center;
+    justify-content: center;
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
@@ -1664,6 +1733,7 @@ a.social-image.footer-social-icon:hover {
 
   .container.container-3 {
     margin-top: 16px;
+    text-align: center;
   }
 }
 .modern-input,
