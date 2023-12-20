@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Warsha. Mechanic Shops Near Me</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #9b59b6, #3498db);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      margin: 10px;
+      width: 300px;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      filter: grayscale(0.5) contrast(1.2) brightness(0.9);
+    }
+
+    .card-content {
+      padding: 10px;
+      overflow-y: auto;
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #3498db;
+    }
+
+    .card-text {
+      font-weight: 300;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .card-button {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to right, #9b59b6, #3498db);
+      color: white;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+
+    .card-button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mechanic Shops Near Me</h1>
+    <p>Find the best auto repair service in Cairo, Egypt</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R.3fc5749202a4291df1020b7adf8625c0?rik=uNZLj4FyvTb%2bIQ&pid=ImgRaw&r=0" alt="Auto repair car service" class="card-image">
+      <div class="card-content">
+        <h2 class="card-title">Auto repair car service</h2>
+        <p class="card-text">We offer a wide range of car services, including oil change, brake repair, transmission repair, and more. </p>
+      </div>
+      <a href="#" class="card-button">Call us: 0114 112 8888</a>
+    </div>
+
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.YSbdMF2tlxw50Wk-fquyvQHaE8?rs=1&pid=ImgDetMain" alt="Top service - Auto Repair" class="card-image">
+      <div class="card-content">
+        <h2 class="card-title">Top service - Auto Repair</h2>
+       <p class="card-text">We are a trusted and reliable auto repair shop that provides quality and affordable car services.</p>
+      </div>
+      <a href="#" class="card-button">Call us: 0101 613 2049</a>
+    </div>
+
+    <div class="card">
+      <img src="https://www.motorera.com/wp-content/uploads/2020/05/1399468e2d772c9336acb85186db2fb2.jpeg" alt="Mechanic LLC" class="card-image">
+      <div class="card-content">
+        <h2 class="card-title">Mechanic LLC</h2>
+        <p class="card-text">We are a certified and licensed auto repair company that offers a variety of car services, such as tune up, alignment, tire repair, and more. </p>
+      </div>
+      <a href="#" class="card-button">Call us: 02 24148891</a>
+    </div>
+
+    <div class="card">
+      <img src="https://www.factoryyard.com/wp-content/uploads/2021/01/AME2.png" alt="Arab Mechanics" class="card-image">
+      <div class="card-content">
+        <h2 class="card-title">Arab Mechanics</h2>
+        <p class="card-text">We are a leading and reputable auto repair service that offers a full range of car services, such as body work and paint, diagnostic services, and more.</p>
+      </div>
+      <a href="#" class="card-button">Call us: 0111 108 0888</a>
+    </div>
+  </main>
+</body>
+</html>
